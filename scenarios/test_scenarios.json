@@ -1,0 +1,29 @@
+{
+  "complex_traffic_scenario": {
+    "id": "complex_traffic_scenario",
+    "title": "Multi-Factor Traffic Disruption",
+    "description": "Major highway accident causing 45+ minute delays. Construction on alternate route. Weather conditions deteriorating. Multiple drivers affected. Customer has important meeting in 1 hour.",
+    "severity": "high",
+    "stakeholders": ["driver", "customer", "operations_team", "other_drivers"],
+    "expected_tools": ["check_traffic", "calculate_alternative_route", "notify_customer", "contact_recipient"],
+    "scenario_type": "complex_logistics"
+  },
+  "merchant_outage": {
+    "id": "merchant_outage",
+    "title": "Restaurant System Outage",
+    "description": "Restaurant POS system is down, cannot confirm order status or prepare new orders. Multiple pending deliveries affected. Customers are calling support.",
+    "severity": "high", 
+    "stakeholders": ["merchant", "drivers", "customers", "support_team"],
+    "expected_tools": ["get_merchant_status", "notify_customer", "contact_recipient"],
+    "scenario_type": "system_outage"
+  },
+  "driver_emergency": {
+    "id": "driver_emergency",
+    "title": "Driver Vehicle Breakdown",
+    "description": "Driver's vehicle broke down en route to delivery. Order contains perishable items. Customer is waiting. Need immediate backup driver coordination.",
+    "severity": "critical",
+    "stakeholders": ["driver", "customer", "operations_team", "backup_driver"],
+    "expected_tools": ["notify_customer", "contact_recipient", "calculate_alternative_route"],
+    "scenario_type": "emergency_response"
+  }
+}
